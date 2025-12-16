@@ -10,6 +10,9 @@
     </head>
     <body>
         {{ $slot }}
+        <div class="flex justify-center items-center h-96">
+            <a href="/home" class="m-4 bg-cyan-600 text-white rounded-lg p-3 text-l">Home</a>
+        </div>
         <script src="{{ asset('build/assets/app-CJy8ASEk.js') }}"></script>
     </body>
 </html>
