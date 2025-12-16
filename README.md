@@ -63,6 +63,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 composer run setup
 ```
 
+### Manual Process of installation
+
 ```bash
 composer install # or 'composer update'
 cp .env.example .env
