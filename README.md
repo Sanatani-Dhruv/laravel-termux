@@ -23,7 +23,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Installation of this Project
 
-> Simplest and should work for most cases, first attempt might not get complete setup, due to changes required in .env, changing .env with your proper relational-db connection and re-run the below command will work
+> Simplest and should work for most cases, first attempt might not complete setup, due to changes required in .env, changing .env with your proper relational-db connection and re-run the below command will work
 
 ```bash
 composer run setup
