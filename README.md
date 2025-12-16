@@ -23,7 +23,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Installation of this Project
 
-> Simplest and should work for most cases, first attempt might not complete setup, due to changes required in .env, changing .env with your proper relational-db connection and re-run the below command will work
+> Simplest and should work for most cases, first run the below command and it might not complete the setup, due to changes required in .env. Editing .env with your proper relational-db connection and re-run the below command will work
 
 ```bash
 composer run setup
@@ -43,10 +43,10 @@ php artisan key:generate
 then, possible working configuration for database in .env would be:
 
 ```bash
-DB_CONNECTION=mysql
+DB_CONNECTION=mariadb
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=app_name
+DB_DATABASE=laravel_termux
 DB_USERNAME=root
 DB_PASSWORD=password
 ```
@@ -62,9 +62,6 @@ npm run build
 ## Start Development Server
 
 ```bash
-php artisan serve
-
-# or
-
 composer run dev # It's also starts vite server
 ```
+> `php artisan serve` is not recommended here, because we are using tailwind css and alpine.js, so we need vite for development purpose
