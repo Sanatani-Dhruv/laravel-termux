@@ -1,12 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Counter;
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
+Route::get('/', Counter::class);
+
+Route::get('/home', function () {
     return view('home');
 });
 
