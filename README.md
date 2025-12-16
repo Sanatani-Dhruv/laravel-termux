@@ -56,4 +56,39 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Installation of this Project
+
+> Simplest and should work for most cases, first attempt might not get completed due to changes require in .env, changing env with your proper relational-db connection and re-run the below command will work
+```bash
+composer run setup
+```
+
+```bash
+composer install # or 'composer update'
+cp .env.example .env
+php artisan key:generate
+```
+
+> Configure .env file to change DB_PASSWORD and DB_USERNAME for setting db connection according to your existing database.
+> Like, if your mariadb's username is 'root' and password is 'password',
+then, possible working configuration for database in .env would be:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=app_name
+DB_USERNAME=root
+DB_PASSWORD=password
+```
+
+after Configuration, run:
+
+```bash
+php artisan migrate
+```
+
+## Start Development Server
+```bash
+php artisan serve
+`he Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
