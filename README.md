@@ -21,6 +21,12 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Requirement for this Project
+
+- composer - Dependency manager for php (version: >2.9) [Get Composer](https://getcomposer.org/)
+- nodejs and npm - Javascript runtime and Package manager [Get Node.js and NPM](https://nodejs.org/en/download/)
+- php - Programming Language (version: >8.2) [Get PHP](https://www.php.net/downloads.php)
+
 ## Installation of this Project
 
 > Simplest and should work for most cases, first run the below command and it might not complete the setup, due to changes required in .env. Editing .env with your proper relational-db connection and re-run the below command will work
