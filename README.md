@@ -58,12 +58,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## Installation of this Project
 
-> Simplest and should work for most cases, first attempt might not get completed due to changes require in .env, changing env with your proper relational-db connection and re-run the below command will work
+> Simplest and should work for most cases, first attempt might not get complete setup, due to changes required in .env, changing .env with your proper relational-db connection and re-run the below command will work
+
 ```bash
 composer run setup
 ```
 
 ### Manual Process of installation
+> For those who understands what actually happens during startup of laravel project
 
 ```bash
 composer install # or 'composer update'
@@ -88,9 +90,16 @@ after Configuration, run:
 
 ```bash
 php artisan migrate
+npm install
+npm run build
 ```
 
 ## Start Development Server
+
 ```bash
 php artisan serve
-`he Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# or
+
+composer run dev # It's also starts vite server
+```
